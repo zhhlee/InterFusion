@@ -7,3 +7,4 @@ __pycache__/
 .DS_Store
 *.log
 data/Dataset Description.md
+.idea/vcs.xml
