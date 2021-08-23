@@ -2,7 +2,7 @@
 
 **KDD 2021: Multivariate Time Series Anomaly Detection and Interpretation using Hierarchical Inter-Metric and Temporal Embedding**
 
-InterFusion is an unsupervised MTS anomaly detection and interpretation method. It's core idea is to model the normal patterns of MTS using HVAE with jointly trained hierarchical stochastic latent variables, each of which explicitly learns low-dimensional inter-metric or temporal embeddings. You may refer to our paper for more details (coming soon).
+InterFusion is an unsupervised MTS anomaly detection and interpretation method. It's core idea is to model the normal patterns of MTS using HVAE with jointly trained hierarchical stochastic latent variables, each of which explicitly learns low-dimensional inter-metric or temporal embeddings. You may refer to our [paper](https://dl.acm.org/doi/abs/10.1145/3447548.3467075) for more details.
 
 ## Getting Started
 
@@ -90,10 +90,11 @@ Testing statistics: results/stack_predict/result.json
 If you find this code useful for your research, please cite our paper:
 
 ```bibTex
-@inproceedings{li2021multi,
+@inproceedings{li2021multivariate,
   title={Multivariate Time Series Anomaly Detection and Interpretation using Hierarchical Inter-Metric and Temporal Embedding},
   author={Li, Zhihan and Zhao, Youjian and Han, Jiaqi and Su, Ya and Jiao, Rui and Wen, Xidao and Pei, Dan},
-  booktitle={Proceedings of the 27th ACM SIGKDD International Conference on Knowledge Discovery \& Data Mining},
+  booktitle={Proceedings of the 27th ACM SIGKDD Conference on Knowledge Discovery \& Data Mining},
+  pages={3220--3230},
   year={2021}
 }
 ```
