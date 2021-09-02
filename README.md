@@ -49,14 +49,14 @@ For dataset SWaT and WADI (Note: you need to acquire these datasets first follow
 SWaT:
 
 ```bash
-python algorithm/stack_train.py --dataset=SWaT --train.train_start=21600 --train.valid_portion=0.1 --model.window_length=30 '--model.output_shape=[15, 15, 30]'	# training
+python algorithm/stack_train.py --dataset=SWaT --train.train_start=21600 --train.valid_portion=0.1 --model.window_length=30 '--model.output_shape=[15, 15, 30]' --model.z2_dim=8	# training
 python algorithm/stack_predict.py --load_model_dir=./results/stack_train/ --mcmc_track=False	# evaluation
 ```
 
 WADI:
 
 ```bash
-python algorithm/stack_train.py --dataset=WADI --train.train_start=259200 --train.max_train_size=789371 --train.valid_portion=0.1 --model.window_length=30 '--model.output_shape=[15, 15, 30]' # training
+python algorithm/stack_train.py --dataset=WADI --train.train_start=259200 --train.max_train_size=789371 --train.valid_portion=0.1 --model.window_length=30 '--model.output_shape=[15, 15, 30]' --model.z2_dim=8 # training
 python algorithm/stack_predict.py --load_model_dir=./results/stack_train/ --mcmc_track=False	# evaluation
 ```
 
